@@ -1,6 +1,4 @@
 <h2 align="center">
-<a href="https://www.Recap.ai/"> <img width="50%" src="https://github.com/Recap-owners/Recap/blob/1fabd9372d66cd54238847197c33f091a724803b/RecapWithName.png?raw=true)" /></a>
-</h2>
 
 # Recap Docs
 This repo generates the docs and setup guide for [Recap](https://github.com/Recap-ai/Recap) found at [https://docs.Recap.dev/](https://docs.Recap.dev/).
