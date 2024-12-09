@@ -29,7 +29,6 @@
             "gen_ai_configs/open_ai",
             "gen_ai_configs/anthropic",
             "gen_ai_configs/azure",
-            "gen_ai_configs/huggingface",
             "gen_ai_configs/ollama",
             "gen_ai_configs/fastchat",
             "gen_ai_configs/custom_server"
@@ -51,7 +50,6 @@
           "pages": [
            
             "connectors/confluence",
-            "connectors/dropbox",
             "connectors/file",
             "connectors/github",
             "connectors/gitlab",
@@ -71,49 +69,26 @@
                 "connectors/google_drive/service_account"
               ]
             },
-            "connectors/google_sites",
             "connectors/google_storage",
-            "connectors/hubspot",
             "connectors/jira",
             "connectors/linear",
             "connectors/notion",
-            "connectors/salesforce",
             "connectors/slack",
-            "connectors/teams",
             "connectors/web"
            ]
         }
       ]
     },
-    {
-      "group": "Deploy Recap",
-      "pages": [
-        {
-          "group": "Deploy with AWS",
-          "icon": "aws",
-          "pages": [
-            "production/aws/ec2",
-            "production/aws/eks",
-            "production/aws/ecs"
-          ]
-        },
-        "production/gcp",
-        "production/azure",
-        "production/digitalocean"
-      ]
-    },
+    
     {
       "group": "Auth",
-      "pages": ["basic_auth", "google_oauth_setup", "oidc_saml"]
+      "pages": ["basic_auth", "google_oauth_setup"]
     },
     {
       "group": "Tools",
       "pages": ["tools/overview", "tools/custom"]
     },
-    {
-      "group": "Backend APIs",
-      "pages": ["backend_apis/ingestion"]
-    },
+    
     {
       "group": "Cloud APIs",
       "pages": ["apis/answer_with_quote", "apis/send_message_simple_api"]

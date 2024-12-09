@@ -12,7 +12,6 @@ to start.
 
 ## System Architecture
 
-![RecapArchitecture](/images/system_overview/RecapArchitecture.png)
 
 Whether deploying Recap on a single instance or a container orchestration platform, the flow of data is the same.
 Documents are pulled and processed via connectors and then persisted in Vespa/Postgres which run in containers within
@@ -29,7 +28,6 @@ You can turn off the telemetry with by setting the DISABLE_TELEMETRY env variabl
 
 ## Embedding Flow
 
-![RecapEmbeddingFlow](/images/system_overview/RecapEmbeddingFlow.png)
 
 Each document is split into smaller sections called "Chunks".
 
@@ -48,7 +46,6 @@ while maintaining subsecond document retrieval times.
 
 ## Query Flow
 
-![RecapQueryFlow](/images/system_overview/RecapQueryFlow.png)
 
 This flow is often updated as we're constantly striving to push the capabilities of the retrieval pipeline with the
 most recent advancements coming out of research and the opensource community. Also note that many of the parameters of

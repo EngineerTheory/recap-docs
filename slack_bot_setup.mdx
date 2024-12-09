@@ -16,12 +16,10 @@ When Recap identifies valid questions, it will respond in the message thread wit
 - Quotes of the most relevant excerpts
 - Sources with highlighted keywords
 
-![SlackBot](/images/slack_bot/SlackBot.png)
 
 Recap also provides a configuration page so you can create custom settings for each slack channel
 (or you can just use the default settings for all your channels).
 
-![SlackBotConfig](/images/slack_bot/SlackBotConfig.png)
 
 Since we are using Web Sockets, Recap is able to initiate the connection. This means that this is able
 to work even if you are running Recap inside a firewall protected VPC.
@@ -97,20 +95,12 @@ settings:
 Copy this somewhere safe for now, as you will need this later to initiate the Web Socket-based connection to Slack.
 7. In the app page, navigate to the **OAuth & Permissions** tab under the **Features** header.
 8. Under **OAuth Tokens for Your Workspace**, select `Install to Workspace` and Allow the app.
-![RecapBotInstall](/images/slack_bot/RecapBotInstall.png)
 9. Copy the **Bot User OAuth Token**, this will be needed later to enable us to respond to messages as RecapBot.
 
 ### Setting Recap to use it
 
 Start by finding the admin page in the top right of the Recap web UI.
-![RecapAdminButton](/images/slack_bot/RecapAdminButton.png)
 
 On the left hand menu of the admin page, navigate to the bottom to **Bots**.
 
 Provide your Slack Tokens and Recap will start to respond to your slack channels after a short startup delay.
-![SlackBotTokens](/images/slack_bot/SlackBotTokens.png)
-
-There are also a set of less often used / more advanced configuration options available via environment
-variables that can set things like how many "Reference Documents" to show per answer, etc.
-Refer to the available configs
-[here](https://github.com/Recap-ai/Recap/blob/main/backend/Recap/configs/Recapbot_configs.py)
