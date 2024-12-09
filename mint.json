@@ -1,0 +1,170 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Recap Work",
+ 
+  "favicon": "favicon.svg",
+  "colors": {
+    "primary": "#0069ED",
+    "light": "#4D9CFF",
+    "dark": "#0050B4"
+  },
+ 
+  "anchors": [
+   
+  ],
+  "openapi": ["/apis/openapi.json"],
+  "navigation": [
+    {
+      "group": "Welcome to Recap",
+      "pages": [
+        "introduction",
+        "quickstart",
+        "resourcing",
+        "slack_bot_setup",
+        {
+          "group": "Gen AI Configs",
+          "icon": "stars",
+          "pages": [
+            "gen_ai_configs/overview",
+            "gen_ai_configs/open_ai",
+            "gen_ai_configs/anthropic",
+            "gen_ai_configs/azure",
+            "gen_ai_configs/huggingface",
+            "gen_ai_configs/ollama",
+            "gen_ai_configs/fastchat",
+            "gen_ai_configs/custom_server"
+          ]
+        },
+        "configuration_guide",
+        "multilingual_setup",
+        "system_overview",
+        "contact_us"
+      ]
+    },
+    {
+      "group": "Connectors",
+      "icon": "plug",
+      "pages": [
+        "connectors/overview",
+        {
+          "group": "Connectors",
+          "pages": [
+           
+            "connectors/confluence",
+            "connectors/dropbox",
+            "connectors/file",
+            "connectors/github",
+            "connectors/gitlab",
+            {
+              "group": "Gmail Connector",
+              "pages": [
+                "connectors/gmail/overview",
+                "connectors/gmail/oauth",
+                "connectors/gmail/service_account"
+              ]
+            },
+            {
+              "group": "Google Drive Connector",
+              "pages": [
+                "connectors/google_drive/overview",
+                "connectors/google_drive/oauth",
+                "connectors/google_drive/service_account"
+              ]
+            },
+            "connectors/google_sites",
+            "connectors/google_storage",
+            "connectors/hubspot",
+            "connectors/jira",
+            "connectors/linear",
+            "connectors/notion",
+            "connectors/salesforce",
+            "connectors/slack",
+            "connectors/teams",
+            "connectors/web"
+           ]
+        }
+      ]
+    },
+    {
+      "group": "Deploy Recap",
+      "pages": [
+        {
+          "group": "Deploy with AWS",
+          "icon": "aws",
+          "pages": [
+            "production/aws/ec2",
+            "production/aws/eks",
+            "production/aws/ecs"
+          ]
+        },
+        "production/gcp",
+        "production/azure",
+        "production/digitalocean"
+      ]
+    },
+    {
+      "group": "Auth",
+      "pages": ["basic_auth", "google_oauth_setup", "oidc_saml"]
+    },
+    {
+      "group": "Tools",
+      "pages": ["tools/overview", "tools/custom"]
+    },
+    {
+      "group": "Backend APIs",
+      "pages": ["backend_apis/ingestion"]
+    },
+    {
+      "group": "Cloud APIs",
+      "pages": ["apis/answer_with_quote", "apis/send_message_simple_api"]
+    },
+    {
+      "group": "Enterprise",
+      "pages": [
+        "enterprise_edition/overview",
+        "enterprise_edition/configuration",
+        "enterprise_edition/theming",
+        "enterprise_edition/custom_analytics",
+        "enterprise_edition/permissioning",
+        {
+          "group": "Curator",
+          "pages": [
+            "enterprise_edition/curator/overview",
+            "enterprise_edition/curator/admin_examples",
+            "enterprise_edition/curator/curator_examples"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "More",
+      "pages": [
+        {
+          "group": "Use Cases",
+          "pages": [
+            "more/use_cases/overview",
+            "more/use_cases/enterprise_search",
+            "more/use_cases/ai_platform",
+            "more/use_cases/support",
+            "more/use_cases/sales",
+            "more/use_cases/operations"
+          ]
+        },
+        "more/faq",
+        "more/telemetry"
+      ]
+    }
+  ],
+  "footerSocials": {
+   
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_ghlrcfXpgWq9XxZeVMfoJpfaISgFGoXhHYOEcBwdulK",
+      "apiHost": "https://us.i.posthog.com"
+    },
+    "gtm": {
+      "tagId": "GTM-MFZGFSR5"
+    }
+  }
+}
