@@ -1,5 +1,3 @@
-<h2 align="center">
-
 # Recap Docs
 This repo generates the docs and setup guide for [Recap](https://github.com/Recap-ai/Recap) found at [https://docs.Recap.dev/](https://docs.Recap.dev/).
 
