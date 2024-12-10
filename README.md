@@ -1,5 +1,5 @@
 # Recap Docs
-This repo generates the docs and setup guide for [Recap](https://github.com/Recap-ai/Recap) found at [https://docs.Recap.dev/](https://docs.Recap.dev/).
+This repo generates the docs and setup guide for [Recap](https://github.com/Recap-ai/Recap) found at [https://docs.Recap.work/](https://docs.Recap.work/).
 
 It uses Mintlify which is a no-code documentation generation tool.
 Instructions on setting up local preview are included below.
