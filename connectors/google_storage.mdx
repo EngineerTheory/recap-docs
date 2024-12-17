@@ -14,19 +14,18 @@ Documents are updated every **1** day.
 
 1. Log into your Google Cloud Console.
 2. Navigate to "IAM & Admin" > "Service Accounts".
+   ![Service Account Page](/images/connectors/blob/google/serviceaccount.png)
 
 3. Click "Create Service Account".
 
-4. Set a name for the new service account (e.g., "Recap-gcs-connector") and click "Create".
+4. Set a name for the new service account (e.g., "RECAP-gcs-connector") and click "Create".
 
 5. For the role, select "Storage Object Viewer" or another appropriately permissive role and click "Continue".
+   ![Role](/images/connectors/blob/google/serviceaccountrole.png)
 
 6. Click "Done" to finish creating the service account.
 7. On the Service Accounts page, find your newly created account and click on it.
 8. In the "Keys" section, click "Add Key" > "Create new key".
-
-![New Key](/images/connectors/blob/google/newkey.png)
-
 
 9. Choose "JSON" as the key type and click "Create".
 
@@ -43,6 +42,7 @@ Documents are updated every **1** day.
 
 1. Navigate to the Admin Dashboard and select the **Google Cloud Storage** Connector.
 2. In **Step 1**, provide your GCS credentials:
+![recap page1](/images/connectors/blob/google/recap1.png)
 
 
 * Provide your GCS Project ID, Access Key ID, and Secret Access Key for authentication.
@@ -54,7 +54,7 @@ Documents are updated every **1** day.
 
 3. Click "Update" to save your credentials.
 
-4. In **Step 2**, specify which GCS bucket you want to make searchable:
+4. In **Step 2**, specify which GCS bucket you want to make searchable.
 
 5. Click "Connect" to begin indexing.
 

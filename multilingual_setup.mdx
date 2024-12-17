@@ -1,15 +1,15 @@
 ---
 title: "Multilingual Setup"
-description: "How to set up Recap to support languages other than English"
+description: "How to set up RECAP to support languages other than English"
 icon: "language"
 ---
 
-For the majority of use cases, Recap provides an easy way to configure the system for multilingual use.
+For the majority of use cases, RECAP provides an easy way to configure the system for multilingual use.
 To skip the details and just go to setup, see the
-[**Configuration**](https://docs.Recap.dev/multilingual_setup#configuration) section below.
+[**Configuration**](https://docs.RECAP.work/multilingual_setup#configuration) section below.
 
 ## How it works
-Recap has two main flows that assume English as a default. To use Recap in multilingual or non-english cases,
+RECAP has two main flows that assume English as a default. To use RECAP in multilingual or non-english cases,
 these must be handled.
 - The vector portion of the hybrid-search/reranking. This selects relevant documents to pass to the Large
 Language Model as context
@@ -21,17 +21,17 @@ Additionally query expansion is applied to rephrase the user query into the targ
 To address the second point, additional instructions are given to the LLM to respect the input language and
 to respond in the same language as the user query.
 
-> **Note**: The Recap LLM prompts are still in English, just with added instructions if the user
+> **Note**: The RECAP LLM prompts are still in English, just with added instructions if the user
 configures multilingual settings (see below). If all of your documents and queries are in some other language,
-it will be better to simply translate all of Recap's prompts directly to that target language. You can do so
-[here](https://github.com/Recap-ai/Recap/tree/main/backend/Recap/prompts).
+it will be better to simply translate all of RECAP's prompts directly to that target language. You can do so
+here- backend/RECAP/prompts.
 
 ## Configuration
 Unless you are translating the LLM prompts yourself, the configuration for multilingual can be done entirely via
-environment variables. For Docker Compose, simply make an `.env` file in `Recap/deployment/docker_compose` and
+environment variables. For Docker Compose, simply make an `.env` file in `RECAP/deployment/docker_compose` and
 populate it with the desired values before deploying.
 
-Update the values below to suit your particular needs, this example shows using Recap with both French and English.
+Update the values below to suit your particular needs, this example shows using RECAP with both French and English.
 The settings below have descriptions to help you configure values according to your use case.
 ```
 # Rephrase the user query in specified languages using LLM, use comma separated values
@@ -72,8 +72,7 @@ GEN_AI_MODEL_VERSION="gpt-4"
 
 An up to date template of multilingual settings is also provided directly in the code repository in the same
 directory as where the `.env` file should be placed.
-[See here for reference](https://github.com/Recap-ai/Recap/blob/main/deployment/docker_compose/env.multilingual.template).
 
 ## Example
 If you've configured everything correctly, you should now be able to get good answers across the different
-languages that you've set the system up for.s
+languages that you've set the system up for.

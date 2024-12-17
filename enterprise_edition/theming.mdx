@@ -1,9 +1,9 @@
 ---
 title: "Theming"
-description: 'Customize the look of Recap'
+description: 'Customize the look of RECAP'
 ---
 
-As part of the Enterprise Edition, we provide the ability to easily customize the look of Recap. This comes in two forms:
+As part of the Enterprise Edition, we provide the ability to easily customize the look of RECAP. This comes in two forms:
 
 1. Adding in your own custom application name / logo.
 2. Customizing every color in the UI.
@@ -15,7 +15,7 @@ a name of your choice, as well as an optional logo.
 
 #### Advanced Options
 
-Recap also has some advanced customization options
+RECAP also has some advanced customization options
 
 1. **Chat Header Content**
    Custom Markdown content that will be displayed as a banner at the top of the Chat page.
@@ -45,11 +45,11 @@ Recap also has some advanced customization options
 
 ### Customizing Colors
 
-Recap uses [Tailwind CSS](https://tailwindcss.com/) for theming. The color palette is defined in two main files:
+RECAP uses [Tailwind CSS](https://tailwindcss.com/) for theming. The color palette is defined in two main files:
 1. `web/tailwind-themes/tailwind.config.js`: This file contains the base Tailwind configuration, including color definitions.
 2. `web/src/app/globals.css`: This file defines CSS variables for colors, which are then used in the Tailwind config.
 
-To customize the color palette of Recap, you can:
+To customize the color palette of RECAP, you can:
 1. Navigate to `web/src/app/globals.css`
 2. Customize the base color palette (for example, create different accent colors, background colors, etc.)
 
@@ -81,5 +81,5 @@ module.exports = {
 };
 ```
 
-**NOTE:** for these changes to apply, you will need to build Recap from source. If testing locally, you will need to restart the 
+**NOTE:** for these changes to apply, you will need to build RECAP from source. If testing locally, you will need to restart the 
 NextJS application to apply the changes.

@@ -36,7 +36,7 @@ If you must delete a connector and related information before the process of wai
 
 1. Gather the ID of the connector you wish to delete.
 
-2. Navigate to the base folder of your Recap repository.
+2. Navigate to the base folder of your RECAP repository.
 
 3. Run `python3 backend/scripts/force_delete_connector_by_id.py <CONNECTOR_ID>`
 
@@ -46,10 +46,10 @@ Follow these steps to manually and immediately delete a connector and its conten
 
 1. Ensure your Docker containers are running- you can refer to the [quickstart guide](/quickstart):
    ```
-   docker compose -f docker-compose.dev.yml -p Recap-stack up -d --build --force-recreate
+   docker compose -f docker-compose.dev.yml -p RECAP-stack up -d --build --force-recreate
    ```
 
-2. Identify the `<CONTAINER_ID>` of your API server container. It should contain the string `Recap-api`. You can list all running containers with:
+2. Identify the `<CONTAINER_ID>` of your API server container. It should contain the string `RECAP-api`. You can list all running containers with:
    ```
    docker ps -a
    ```

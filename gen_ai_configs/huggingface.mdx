@@ -1,9 +1,9 @@
 ---
 title: HuggingFace Inference API
-description: 'Configure Recap to use HuggingFace APIs'
+description: 'Configure RECAP to use HuggingFace APIs'
 ---
 
-Refer to [Model Configs](https://docs.Recap.dev/gen_ai_configs/overview#model-configs) for how to set the
+Refer to [Model Configs](https://docs.RECAP.work/gen_ai_configs/overview#model-configs) for how to set the
 environment variables for your particular deployment.
 
 To use the HuggingFace Inference APIs, you must sign up for a `Pro Account` to get an API Key
@@ -16,7 +16,7 @@ To use the HuggingFace Inference APIs, you must sign up for a `Pro Account` to g
 ![HFAccessToken](/images/gen_ai/HFAccessToken.png)
 
 
-## Set Recap to use `Llama-2-70B` via next-token generation prompting
+## Set RECAP to use `Llama-2-70B` via next-token generation prompting
 
 On the `LLM` page in the Admin Panel add a `Custom LLM Provider` with the following settings:
 
@@ -26,4 +26,4 @@ On the `LLM` page in the Admin Panel add a `Custom LLM Provider` with the follow
 
 **Update (November 2023)**: HuggingFace has stopped supporting very large models (>10GB) via the *Pro Plan*.
 The latest options are to rent dedicated hardware from them via Inference Endpoint or get an Enterprise Plan.
-The *Pro Plan* still supports smaller models but these produce worse results for Recap.
+The *Pro Plan* still supports smaller models but these produce worse results for RECAP.

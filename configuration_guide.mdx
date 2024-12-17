@@ -1,5 +1,5 @@
 ---
-title: "Configuring Recap"
+title: "Configuring RECAP"
 description: "How to customize your deployment environment."
 icon: "screwdriver-wrench"
 ---
@@ -8,18 +8,18 @@ icon: "screwdriver-wrench"
 All of the global configuration options that are not built into the UI are set via environment variables.
 This page contains an exhaustive list of all the options.
 
-There are defaults set in the code so changing/settings these values is **not required** to use Recap.
+There are defaults set in the code so changing/settings these values is **not required** to use RECAP.
 A few notable settings that are more frequently changed however are the following:
 - AUTH_TYPE (default value is `disabled`)
 - MULTILINGUAL_QUERY_EXPANSION (you can provide a comma separated list of languages for query rephrasing such as `English,French`)
 - LOG_LEVEL (default is `info`)
-- WEB_DOMAIN (your full url in production, including the protocol- e.g. `https://www.Recap.ai`)
+- WEB_DOMAIN (your full url in production, including the protocol- e.g. `https://www.RECAP.ai`)
 
 ## Docker Compose
 There are several ways to configure environment variables for the containers. For Docker Compose, there are many ways
 to pass environment variables to the container, any of the standard approaches will work. However
-**the preferred approach** for Recap is to use the `.env` file. To do this, create a file called `.env` at
-`Recap/deployment/docker_compose/.env`. From there, populate it with the values you want to override:
+**the preferred approach** for RECAP is to use the `.env` file. To do this, create a file called `.env` at
+`RECAP/deployment/docker_compose/.env`. From there, populate it with the values you want to override:
 
 ```
 # Configures basic email/password based login
@@ -39,12 +39,12 @@ LOG_ALL_MODEL_INTERACTIONS="true"
 
 ## Kubernetes
 For Kubernetes, the deployment yaml files includes an Environment ConfigMap. Simply update the values in the file
-[here](https://github.com/Recap-ai/Recap/blob/main/deployment/kubernetes/env-configmap.yaml).
+we provide.
 
 ## All Environment Variables
 
 
-This is an extensive list of the currently supported environment variables within Recap. There are several classes of environment variables. All of the global configuration options that are not built into the UI are set via environment variables.
+This is an extensive list of the currently supported environment variables within RECAP. There are several classes of environment variables. All of the global configuration options that are not built into the UI are set via environment variables.
 
 
 You can set these in your `.env` file.
@@ -52,10 +52,10 @@ You can set these in your `.env` file.
 
 ### Auth Settings
 
-These variables control authentication and user management in Recap.
+These variables control authentication and user management in RECAP.
 
 #### AUTH_TYPE
-Controls the authentication method used by Recap.
+Controls the authentication method used by RECAP.
 
 
 <Note>
@@ -87,7 +87,7 @@ Client ID for Google OAuth authentication, obtained from [Google Cloud Console](
 Client Secret for Google OAuth authentication, obtained from [Google Cloud Console](https://console.cloud.google.com). Keep this value secret.
 
 #### REQUIRE_EMAIL_VERIFICATION
-When set to `true`, users must verify their email before accessing Recap.
+When set to `true`, users must verify their email before accessing RECAP.
 
 #### SMTP_SERVER
 Hostname of the SMTP server for sending verification emails. Default is `smtp.gmail.com`.
@@ -106,7 +106,7 @@ Email address used as the sender for verification emails.
 
 ### Gen AI Settings
 
-These variables configure the generative AI capabilities of Recap. These are covered in more depth at the [generative AI configs](/gen_ai_configs/overview).
+These variables configure the generative AI capabilities of RECAP. These are covered in more depth at the [generative AI configs](/gen_ai_configs/overview).
 
 #### GEN_AI_MODEL_PROVIDER
 Specifies the provider of the generative AI model (e.g., `openai`, `anthropic`, `huggingface`).
@@ -188,7 +188,7 @@ Custom prompt text to override the default prompt used for question-answering.
 
 ### Other Services
 
-Configuration for external services used by Recap.
+Configuration for external services used by RECAP.
 
 #### POSTGRES_HOST
 Hostname or IP address of the Postgres server. Default is `relational_db`.
@@ -197,7 +197,7 @@ Hostname or IP address of the Postgres server. Default is `relational_db`.
 Hostname or IP address of the Vespa server. Default is `index`.
 
 #### WEB_DOMAIN
-Fully qualified domain name used for the Recap web interface. (e.g. https://www.Recap.com)
+Fully qualified domain name used for the RECAP web interface. (e.g. https://www.RECAP.com)
 
 ### NLP Model Configurations
 Advanced settings for NLP models. Modify with caution.
@@ -237,7 +237,7 @@ Port on which the model server is listening.
 Various other configuration options.
 
 #### DISABLE_TELEMETRY
-Set to `true` to opt out of telemetry. Telemetry helps improve Recap; no sensitive data is collected.
+Set to `true` to opt out of telemetry. Telemetry helps improve RECAP; no sensitive data is collected.
 
 #### LOG_LEVEL
 Sets the logging verbosity. Possible values: `debug`, `info`, `warning`, `error`, `critical`.

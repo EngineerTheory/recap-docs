@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Recap Work",
+  "name": "RECAP Work",
   "favicon": "favicon2.png",
   "colors": {
     "primary": "#0069ED",
@@ -14,7 +14,7 @@
   "openapi": ["/apis/openapi.json"],
   "navigation": [
     {
-      "group": "Welcome to Recap",
+      "group": "Welcome to RECAP",
       "pages": [
         "introduction",
         "quickstart",

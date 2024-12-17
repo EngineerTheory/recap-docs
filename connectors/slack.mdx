@@ -5,7 +5,7 @@ description: 'Access knowledge from your Messages'
 
 ## How it works
 The Slack connector indexes all public channels for a given workspace.
-- Upcoming: Support for private channels by tagging/adding the Recap Slack Bot to private channels.
+- Upcoming: Support for private channels by tagging/adding the RECAP Slack Bot to private channels.
 
 
 ## Setting up
@@ -22,11 +22,11 @@ The Slack connector indexes all public channels for a given workspace.
 4. Select the "YAML" tab, paste the following manifest into the text box, and click **Next**:
 ```
 display_information:
-  name: RecapConnector
-  description: ReadOnly Connector for indexing Recap
+  name: RECAPConnector
+  description: ReadOnly Connector for indexing RECAP
 features:
   bot_user:
-    display_name: RecapConnector
+    display_name: RECAPConnector
     always_online: false
 oauth_config:
   scopes:
@@ -59,6 +59,6 @@ settings:
 
 ![SlackConnectorSetting](/images/connectors/slack/SlackConnectorSetting.png)
 
-3. Set the **Workspace ID** (if this is workspace- recap.slack.com then 'recap' is ID) and click **Connect**.
+3. Set the **Workspace ID** (if this is workspace- RECAP.slack.com then 'RECAP' is ID) and click **Connect**.
 
 __Note:__ The first indexing pulls all of the public channels and takes longer than future updates.

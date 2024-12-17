@@ -1,9 +1,9 @@
 ---
 title: Ollama
-description: 'Configure Recap to use Ollama'
+description: 'Configure RECAP to use Ollama'
 ---
 
-Refer to [Model Configs](https://docs.Recap.dev/gen_ai_configs/overview#model-configs) for how to set the
+Refer to [Model Configs](https://docs.RECAP.work/gen_ai_configs/overview#model-configs) for how to set the
 environment variables for your particular deployment.
 
 **Note**: While we support self hosted LLMs, you will get significantly better responses with a more powerful
@@ -23,7 +23,7 @@ curl http://localhost:11434/api/generate -d '{
 }'
 ```
 
-## Set Recap to use Ollama
+## Set RECAP to use Ollama
 
 On the `LLM` page in the Admin Panel add a `Custom LLM Provider` with the following settings:
 
@@ -31,7 +31,7 @@ On the `LLM` page in the Admin Panel add a `Custom LLM Provider` with the follow
 
 ![OllamaLLMProvider2](/images/gen_ai/OllamaLLMProvider2.png)
 
-**Note**: For the API Base, you should point Recap to wherever Ollama is running. To point to 
+**Note**: For the API Base, you should point RECAP to wherever Ollama is running. To point to 
 a Docker container running at http://localhost:11434, use host.docker.internal instead of localhost 
 (as shown in the screenshots).
 

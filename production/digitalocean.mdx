@@ -1,13 +1,13 @@
 ---
 title: "Deploy on Digital Ocean"
-description: "Setup Recap on Digital Ocean"
+description: "Setup RECAP on Digital Ocean"
 icon: Digital-Ocean
 ---
 
-You can use a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) to deploy Recap.
-This is a simple and cost effective way to deploy Recap and should meet the performance needs of smaller organizations looking to use Recap.
+You can use a [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets) to deploy RECAP.
+This is a simple and cost effective way to deploy RECAP and should meet the performance needs of smaller organizations looking to use RECAP.
 
-Feel free to reach out to us via the links on our [Contact Us](https://docs.Recap.dev/contact_us) page for more individual help.
+Feel free to reach out to us via the links on our [Contact Us](https://docs.RECAP.work/contact_us) page for more individual help.
 
 ## Getting an Instance
 
@@ -69,9 +69,9 @@ Digital Ocean's nameservers are:
 
 These need to be set in the DNS provider's console.
 
-## Starting up Recap
+## Starting up RECAP
 
-Because your Droplet is running Docker, we can use Docker Compose to start up Recap.
+Because your Droplet is running Docker, we can use Docker Compose to start up RECAP.
 
 Once the Droplet agent is installed (and configured if necessary), you can access the Droplet Console from the DigitalOcean Control Panel.
 First, click the name of the Droplet you want to access to expand its detail window, then click the name again to go to its detail page. From the detail page, click the Access tab in the left menu.
@@ -79,16 +79,12 @@ First, click the name of the Droplet you want to access to expand its detail win
 In the Droplet Console section, enter the user you want to log in as in the Log in as… field. By default, this is set to root. Once you choose a user, click Launch Droplet Console to open the Droplet console.
 When the console loads, you can use the command line to run commands on your Droplet.
 
-Clone the repo:
-
-```bash
-git clone https://github.com/Recap-ai/Recap.git
-```
+Clone the repo
 
 Next, let's set the necessary env variables:
 
 ```bash
-cd Recap/deployment/docker_compose
+cd RECAP/deployment/docker_compose
 touch .env
 touch .env.nginx
 ```
@@ -96,9 +92,9 @@ touch .env.nginx
 In the `.env` file, you can copy past the following (filling in the missing fields as needed):
 
 ```
-WEB_DOMAIN=<YOUR_DOMAIN>  # something like "Recap.ai"
+WEB_DOMAIN=<YOUR_DOMAIN>  # something like "RECAP.ai"
 
-# if your email is something like "chris@Recap.ai", then this should be "Recap.ai"
+# if your email is something like "chris@RECAP.ai", then this should be "RECAP.ai"
 # this prevents people outside your company from creating an account
 VALID_EMAIL_DOMAINS=<YOUR_COMPANIES_EMAIL_DOMAIN>
 
@@ -126,7 +122,7 @@ POSTGRES_PASSWORD=password
 In the `.env.nginx` file, put the following:
 
 ```
-DOMAIN=<YOUR_DOMAIN>  # something like "Recap.ai"
+DOMAIN=<YOUR_DOMAIN>  # something like "RECAP.ai"
 ```
 
 Next, let's get our SSL certificate from [letsencrypt](https://letsencrypt.org/). To do this, we can simply run:
@@ -137,13 +133,13 @@ Next, let's get our SSL certificate from [letsencrypt](https://letsencrypt.org/)
 
 <Info>
   If are skipping the HTTPS setup, you should start things up with:
-  `docker-compose -f docker-compose.dev.yml -p Recap-stack up -d --build --force-recreate`
-  instead of the above. You can then access Recap from the IP address from earlier or from the
+  `docker-compose -f docker-compose.dev.yml -p RECAP-stack up -d --build --force-recreate`
+  instead of the above. You can then access RECAP from the IP address from earlier or from the
   instance `Public IPv4 DNS` provided on the instance's page in the DigitalOcean console.
 </Info>
 
 Voila, you're all done! 🎉
 
 After waiting a few minutes (you can monitor the progress with
-`docker logs Recap-stack-api_server-1 -f`; once you see a log for
+`docker logs RECAP-stack-api_server-1 -f`; once you see a log for
 `INFO:     Application startup complete.` then everything should be good to go).

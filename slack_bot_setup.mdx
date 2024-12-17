@@ -4,25 +4,25 @@ description: "How to set up a Slack bot to automatically answer questions"
 icon: "slack"
 ---
 
-## RecapBot Introduction
+## RECAPBot Introduction
 
-Recap will connect to your Slack and listen for messages to answer.
+RECAP will connect to your Slack and listen for messages to answer.
 
-You can easily configure rules for what channels Recap should respond in, what knowledge sets should back each
+You can easily configure rules for what channels RECAP should respond in, what knowledge sets should back each
 configured channel, and set filters to respond or not respond to different types of messages.
 
-When Recap identifies valid questions, it will respond in the message thread with:
+When RECAP identifies valid questions, it will respond in the message thread with:
 - An LLM generated answer
 - Quotes of the most relevant excerpts
 - Sources with highlighted keywords
 
 
-Recap also provides a configuration page so you can create custom settings for each slack channel
+RECAP also provides a configuration page so you can create custom settings for each slack channel
 (or you can just use the default settings for all your channels).
 
 
-Since we are using Web Sockets, Recap is able to initiate the connection. This means that this is able
-to work even if you are running Recap inside a firewall protected VPC.
+Since we are using Web Sockets, RECAP is able to initiate the connection. This means that this is able
+to work even if you are running RECAP inside a firewall protected VPC.
 
 ## Setting up
 
@@ -42,7 +42,7 @@ to work even if you are running Recap inside a firewall protected VPC.
 
 ```
 display_information:
-  name: RecapBot
+  name: RECAPBot
   description: I help answer questions!
 features:
   app_home:
@@ -50,10 +50,10 @@ features:
     messages_tab_enabled: true
     messages_tab_read_only_enabled: false
   bot_user:
-    display_name: RecapBot
+    display_name: RECAPBot
     always_online: true
   slash_commands:
-    - command: /Recap
+    - command: /RECAP
       description: Get back a private answer!
       usage_hint: Put your question here!
       should_escape: false
@@ -95,12 +95,15 @@ settings:
 Copy this somewhere safe for now, as you will need this later to initiate the Web Socket-based connection to Slack.
 7. In the app page, navigate to the **OAuth & Permissions** tab under the **Features** header.
 8. Under **OAuth Tokens for Your Workspace**, select `Install to Workspace` and Allow the app.
-9. Copy the **Bot User OAuth Token**, this will be needed later to enable us to respond to messages as RecapBot.
+   ![OnyxBotInstall](/images/slack_bot/RECAPBotInstall.png)
+9. Copy the **Bot User OAuth Token**, this will be needed later to enable us to respond to messages as RECAPBot.
 
-### Setting Recap to use it
+### Setting RECAP to use it
 
-Start by finding the admin page in the top right of the Recap web UI.
+Start by finding the admin page in the top right of the RECAP web UI.
+   ![RECAPAdmin](/images/slack_bot/admin.png)
 
 On the left hand menu of the admin page, navigate to the bottom to **Bots**.
 
-Provide your Slack Tokens and Recap will start to respond to your slack channels after a short startup delay.
+Provide your Slack Tokens and RECAP will start to respond to your slack channels after a short startup delay.
+   ![RECAPBot](/images/slack_bot/slackbot1.png)
