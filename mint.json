@@ -20,6 +20,7 @@
         "quickstart",
         "resourcing",
         "slack_bot_setup",
+        "chrome_extension",
         {
           "group": "Gen AI Configs",
           "icon": "stars",
@@ -28,6 +29,8 @@
             "gen_ai_configs/open_ai",
             "gen_ai_configs/anthropic",
             "gen_ai_configs/azure",
+            "gen_ai_configs/vertex_ai",
+            "gen_ai_configs/huggingface",
             "gen_ai_configs/ollama",
             "gen_ai_configs/fastchat",
             "gen_ai_configs/custom_server"
@@ -47,11 +50,23 @@
         {
           "group": "Connectors",
           "pages": [
-           
+            "connectors/airtable",
+            "connectors/asana",
+            "connectors/bookstack",
+            "connectors/clickup",
             "connectors/confluence",
+            "connectors/discourse",
+            "connectors/document360",
+            "connectors/dropbox",
+            "connectors/discord",
+            "connectors/egnyte",
             "connectors/file",
+            "connectors/fireflies",
+            "connectors/freshdesk",
             "connectors/github",
             "connectors/gitlab",
+            "connectors/gong",
+            "connectors/gitbook",
             {
               "group": "Gmail Connector",
               "pages": [
@@ -68,26 +83,75 @@
                 "connectors/google_drive/service_account"
               ]
             },
+            "connectors/google_sites",
             "connectors/google_storage",
+            "connectors/guru",
+            "connectors/hubspot",
             "connectors/jira",
             "connectors/linear",
             "connectors/notion",
+            "connectors/oci_storage",
+            "connectors/productboard",
+            "connectors/r2",
+            "connectors/requesttracker",
+            "connectors/s3",
+            "connectors/salesforce",
+            "connectors/sharepoint",
             "connectors/slack",
-            "connectors/web"
-           ]
+            "connectors/slab",
+            "connectors/teams",
+            "connectors/web",
+            "connectors/zendesk",
+            "connectors/zulip"
+          ]
         }
       ]
     },
-    
+    {
+      "group": "Deploy Onyx",
+      "pages": [
+        {
+          "group": "Deploy with AWS",
+          "icon": "aws",
+          "pages": [
+            "production/aws/ec2",
+            "production/aws/eks",
+            "production/aws/ecs"
+          ]
+        },
+        "production/gcp",
+        "production/azure",
+        "production/digitalocean"
+      ]
+    },
     {
       "group": "Auth",
-      "pages": ["basic_auth", "google_oauth_setup"]
+      "pages": ["basic_auth", "google_oauth_setup", "oidc_saml"]
+    },
+    {
+      "group": "Enterprise",
+      "pages": [
+        "enterprise_edition/overview",
+        "enterprise_edition/configuration"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/assistants",
+        "guides/providers",
+        "guides/embedding_providers",
+        "guides/agent_search"
+      ]
     },
     {
       "group": "Tools",
       "pages": ["tools/overview", "tools/custom"]
     },
-    
+    {
+      "group": "Backend APIs",
+      "pages": ["backend_apis/ingestion"]
+    },
     {
       "group": "Cloud APIs",
       "pages": ["apis/answer_with_quote", "apis/send_message_simple_api"]
@@ -125,7 +189,8 @@
           ]
         },
         "more/faq",
-        "more/telemetry"
+        "more/telemetry",
+        "more/options"
       ]
     }
   ],
